@@ -9,7 +9,7 @@ const Singin = () => {
         const username = form.username.value;
         const email = form.email.value;
         const password1 = form.password1.value;
-        
+
         const newUser = {
             username,
             email,
@@ -18,14 +18,14 @@ const Singin = () => {
         console.log(newUser)
     }
     return (
-        <section className="gradient-form h-full w-full  bg-neutral-200 dark:bg-neutral-700">
-            <div className=" h-full w-full">
-                <div className="flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
-                    <div className="w-full">
-                        <div className="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
-                            <div className=" lg:flex flex-row-reverse lg:flex-wrap">
+        <section className="gradient-form min-h-screen w-full bg-neutral-200 ">
+            <div className=" h-full min-h-screen border-2 w-full ">
+                <div className="flex h-full min-h-screen flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
+                    <div className="w-full h-full min-h-screen">
+                        <div className="block rounded-lg min-h-screen h-full bg-white shadow-lg dark:bg-neutral-800">
+                            <div className=" lg:flex flex-row h-full lg:flex-wrap">
                                 {/* right column container */}
-                                <div className="px-4 md:px-0 lg:w-6/12">
+                                <div className="px-4 md:px-0 h-full lg:w-6/12">
                                     <div className="md:mx-6 md:px-12 md:pb-5">
                                         {/* Logo */}
                                         <div className="text-center">
@@ -35,19 +35,20 @@ const Singin = () => {
                                                 alt="logo"
                                             />
                                         </div>
+                                        
 
-                                        <form onSubmit={handlesingin} className="max-w-md mx-auto">
-                                            <p className="mb-4 font-sans text-gray-400">Please Login</p>
+                                        <form onSubmit={handlesingin} className="max-w-md h-full mx-auto">
+                                            <p className="mb-4 font-sans text-gray-400">Please sing in</p>
 
-                                     
-                                          
-                                           
+
+
+
                                             {/* Email input */}
                                             <div className="relative mb-4">
 
                                                 <input
                                                     type="email"
-                                                   className="min-w-0 w-full flex-auto border-0 bg-white bg-opacity-5 focus:outline-none px-3.5 py-2 text-gray-700 shadow-sm focus:ring-1 focus:ring-red-300 text-sm leading-6 rounded"
+                                                    className="min-w-0 w-full flex-auto border-0 bg-white bg-opacity-5 focus:outline-none px-3.5 py-2 text-gray-700 shadow-sm focus:ring-1 focus:ring-red-300 text-sm leading-6 rounded"
                                                     id="email"
                                                     placeholder="Email address"
                                                     name="email"
@@ -59,20 +60,21 @@ const Singin = () => {
 
                                                 <input
                                                     type="password"
-                                                   className="min-w-0 w-full flex-auto border-0 bg-white focus:outline-none bg-opacity-5 px-3.5 py-2 text-gray-700 shadow-sm focus:ring-1 focus:ring-red-300 text-sm leading-6 rounded"
+                                                    className="min-w-0 w-full flex-auto border-0 bg-white focus:outline-none bg-opacity-5 px-3.5 py-2 text-gray-700 shadow-sm focus:ring-1 focus:ring-red-300 text-sm leading-6 rounded"
                                                     id="password1"
                                                     placeholder="Password"
                                                     name="password1"
                                                 />
                                             </div>
 
-                                           
+
 
                                             {/* Submit button */}
                                             <div className="mb-8 text-center">
                                                 <button
-                                                    className="w-full rounded px-4 py-2 text-xs font-medium uppercase text-white shadow-md transition duration-150 ease-in-out bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                                                    className="w-full rounded px-4 py-2 text-xs font-medium uppercase text-white shadow-md transition duration-150 ease-in-out  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                                                     type="submit"
+                                                    style={{ background: 'linear-gradient(to right, #FF6769, #E84A9D, #AC37F1, #287FFF)' }}
                                                 >
                                                     Sign in
                                                 </button>
@@ -103,7 +105,7 @@ const Singin = () => {
 
                                 {/* left column container with background and description */}
                                 <div
-                                    className="lg:flex items-center hidden  rounded-b-lg lg:w-6/12 lg:rounded-e-lg lg:rounded-bl-none"
+                                    className="lg:flex items-center hidden h-full min-h-screen rounded-b-lg lg:w-6/12 lg:rounded-e-lg lg:rounded-bl-none"
                                     style={{ background: 'linear-gradient(to right, #FF6769, #E84A9D, #AC37F1, #287FFF)' }}
                                 >
                                     <div className="px-4 py-6 text-white md:mx-6 md:p-12">
